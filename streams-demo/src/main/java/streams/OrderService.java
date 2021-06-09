@@ -28,7 +28,15 @@ public class OrderService {
                 .distinct() // ha csak egyszer akarjuk
                 .collect(Collectors.toList());
     }
+    
+//     public long getRevenueBetweenDates(LocalDate date1, LocalDate date2){
+//         orders.stream().filter(o -> o.getOrderDate().isAfter(date1) && o.getOrderDate().isBefore(date2))
+//             .flatMap(o -> o.getProducts().stream())
+//             .mapToInt(p -> p.getPrice()).sum();
 
+    public Order getMosExpensive(){
+        orders.stream().
+            
 //    Órán megoldott feladatok:
 //    Határozd meg a rendelések darabszámát egy paraméterként kapott státusz alapján
 //    Gyűjtsd össze azokat a rendeléseket, amelyekben van egy paraméterként kapott kategóriájú termék
