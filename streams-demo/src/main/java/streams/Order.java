@@ -6,7 +6,6 @@ import java.util.List;
 
 public class Order {
 
-
     private String status;
     private LocalDate orderDate;
     private List<Product> products = new ArrayList<>();
