@@ -34,8 +34,6 @@ public class OrderService {
 //             .flatMap(o -> o.getProducts().stream())
 //             .mapToInt(p -> p.getPrice()).sum();
 
-    public Order getMosExpensive(){
-        orders.stream().
             
 //    Órán megoldott feladatok:
 //    Határozd meg a rendelések darabszámát egy paraméterként kapott státusz alapján
